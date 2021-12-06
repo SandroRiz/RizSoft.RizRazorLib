@@ -2,7 +2,7 @@
 {
     @if (BootstrapVersion >= 5)
     {
-        <div id="BSgridHelper" class="bs-grid-helper">
+        <div class="bsgridhelper-badge">
             <span class="badge bg-warning d-inline-block d-sm-none">XS</span>
             <span class="badge bg-warning d-none d-sm-inline-block d-md-none">SM</span>
             <span class="badge bg-warning d-none d-md-inline-block d-lg-none">MD</span>
@@ -13,7 +13,7 @@
     }
     else
     {
-        <div id="BSgridHelper" class="bs-grid-helper">
+        <div class="bsgridhelper-badge">
             <span class="badge badge-warning d-inline-block d-sm-none">XS</span>
             <span class="badge badge-warning d-none d-sm-inline-block d-md-none">SM</span>
             <span class="badge badge-warning d-none d-md-inline-block d-lg-none">MD</span>
@@ -26,7 +26,7 @@
 {
     @if (BootstrapVersion >= 5)
     {
-        <div class="row no-gutters text-center text-muted px-5">
+        <div class="row no-gutters text-center text-muted px-5 bsgridhelper-table">
             <div class="col py-2 bg-light d-none d-sm-block">XS</div>
             <div class="col py-2 bg-primary text-white d-block d-sm-none">XS</div>
 
@@ -56,7 +56,7 @@
     }
     else
     {
-        <div class="row no-gutters text-center text-muted px-5">
+        <div class="row no-gutters text-center text-muted px-5 bsgridhelper-table">
             <div class="col py-2 bg-light d-none d-sm-block">XS</div>
             <div class="col py-2 bg-primary text-white d-block d-sm-none">XS</div>
 
