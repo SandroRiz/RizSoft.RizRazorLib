@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RizSoft.RizRazorLib", "RizSoft.RizRazorLib\RizSoft.RizRazorLib.csproj", "{8AAE74D3-4DB4-4915-A74D-5B2195A579CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AAE74D3-4DB4-4915-A74D-5B2195A579CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AAE74D3-4DB4-4915-A74D-5B2195A579CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AAE74D3-4DB4-4915-A74D-5B2195A579CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AAE74D3-4DB4-4915-A74D-5B2195A579CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9764216B-8C75-4394-A84B-B8045B360C4C}
+	EndGlobalSection
+EndGlobal

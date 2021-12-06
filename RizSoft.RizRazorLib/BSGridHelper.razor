@@ -1,0 +1,95 @@
+﻿@if (Mode == BSGridHelperMode.Badge)
+{
+    @if (BootstrapVersion >= 5)
+    {
+        <div id="BSgridHelper" class="bs-grid-helper">
+            <span class="badge bg-warning d-inline-block d-sm-none">XS</span>
+            <span class="badge bg-warning d-none d-sm-inline-block d-md-none">SM</span>
+            <span class="badge bg-warning d-none d-md-inline-block d-lg-none">MD</span>
+            <span class="badge bg-warning d-none d-lg-inline-block d-xl-none">LG</span>
+            <span class="badge bg-warning d-none d-xl-inline-block d-xxl-none">XL</span>
+            <span class="badge bg-warning d-none d-xxl-inline-block">XXL</span>
+        </div>
+    }
+    else
+    {
+        <div id="BSgridHelper" class="bs-grid-helper">
+            <span class="badge badge-warning d-inline-block d-sm-none">XS</span>
+            <span class="badge badge-warning d-none d-sm-inline-block d-md-none">SM</span>
+            <span class="badge badge-warning d-none d-md-inline-block d-lg-none">MD</span>
+            <span class="badge badge-warning d-none d-lg-inline-block d-xl-none">LG</span>
+            <span class="badge badge-warning d-none d-xl-inline-block ">XL</span>
+        </div>
+    }
+}
+@if (Mode == BSGridHelperMode.Table)
+{
+    @if (BootstrapVersion >= 5)
+    {
+        <div class="row no-gutters text-center text-muted px-5">
+            <div class="col py-2 bg-light d-none d-sm-block">XS</div>
+            <div class="col py-2 bg-primary text-white d-block d-sm-none">XS</div>
+
+            <div class="col py-2 bg-light d-block d-sm-none d-md-block">SM</div>
+            <div class="col py-2 bg-primary text-white d-none d-sm-block d-md-none">SM</div>
+
+            <div class="col py-2 bg-light d-block d-md-none d-lg-block">MD</div>
+            <div class="col py-2 bg-primary text-white d-none d-md-block d-lg-none">MD</div>
+
+            <div class="col py-2 bg-light d-block d-lg-none d-xl-block">LG</div>
+            <div class="col py-2 bg-primary text-white d-none d-lg-block d-xl-none">LG</div>
+
+            <div class="col py-2 bg-light d-block d-xl-none d-xxl-block">XL</div>
+            <div class="col py-2 bg-primary text-white d-none d-xl-block d-xxl-none">XL</div>
+
+            <div class="col py-2 bg-light d-block d-xxl-none">XXL</div>
+            <div class="col py-2 bg-primary text-white d-none d-xxl-block">XXL</div>
+
+            <div class="w-100 mb-2"></div>
+            <div class="col">0px+</div>
+            <div class="col">576px+</div>
+            <div class="col">768px+</div>
+            <div class="col">992px+</div>
+            <div class="col">1200px+</div>
+            <div class="col">1400px+</div>
+        </div>
+    }
+    else
+    {
+        <div class="row no-gutters text-center text-muted px-5">
+            <div class="col py-2 bg-light d-none d-sm-block">XS</div>
+            <div class="col py-2 bg-primary text-white d-block d-sm-none">XS</div>
+
+            <div class="col py-2 bg-light d-block d-sm-none d-md-block">SM</div>
+            <div class="col py-2 bg-primary text-white d-none d-sm-block d-md-none">SM</div>
+
+            <div class="col py-2 bg-light d-block d-md-none d-lg-block">MD</div>
+            <div class="col py-2 bg-primary text-white d-none d-md-block d-lg-none">MD</div>
+
+            <div class="col py-2 bg-light d-block d-lg-none d-xl-block">LG</div>
+            <div class="col py-2 bg-primary text-white d-none d-lg-block d-xl-none">LG</div>
+
+            <div class="col py-2 bg-light d-block d-xl-none">XL</div>
+            <div class="col py-2 bg-primary text-white d-none d-xl-block">XL</div>
+
+            <div class="w-100 mb-2"></div>
+            <div class="col">0px+</div>
+            <div class="col">540px+</div>
+            <div class="col">720px+</div>
+            <div class="col">960px+</div>
+            <div class="col">1140px+</div>
+        </div>
+    }
+}
+
+
+@code
+{
+
+
+    [Parameter]
+    public int BootstrapVersion { get; set; } =5 ;
+
+    [Parameter]
+    public BSGridHelperMode Mode { get; set; } = BSGridHelperMode.Table;
+}
